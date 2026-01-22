@@ -1,0 +1,42 @@
+header, footer{
+	background-color: skyblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+	background-color: skyblue;
+	color: blue;
+	padding: 5px;
+}
+section{
+	margin-bottom: 40px;
+}
+body{
+	front-family:"science-gothic", sans-serfic;
+    color: black;
+}
+
+.menu-container{
+	display: flex;
+	justify-content: center;
+}
+.menu{
+	display: flex;
+	gap: 30px; 
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+}
+a:hover{
+	background-color: skyblue;
+	font-size: 20px;
+    color: black;
+    color: inherit;
+}
+*{
+    text-decoration: none !important;
+}
