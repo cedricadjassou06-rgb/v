@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vote</title>
+		<link rel="stylesheet" href="vote.css">
+	</head>
+	<body>
+		<main class="vote-card">
+			<img src="ced.jpeg" alt="Image de vote" class="vote-image" />
+			<p class="vote-count"><span id="vote-count">145</span> votes</p>
+			<button type="button" id="vote-button">Voter</button>
+		</main>
+
+		<script>
+			const voteButton = document.getElementById('vote-button');
+			const voteCount = document.getElementById('vote-count');
+
+			voteButton.addEventListener('click', () => {
+				voteCount.textContent = Number(voteCount.textContent) + 1;
+				voteButton.textContent = 'Vote enregistré';
+				voteButton.disabled = true;
+			});
+		</script>
+	</body>
+</html>
